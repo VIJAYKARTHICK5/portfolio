@@ -1,0 +1,251 @@
+/* === Responsive @ 1200px and below === */
+@media screen and (max-width: 1200px) {
+  /* Navigation changes */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    background-color: #c1c9cb;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  /* Layout changes */
+  section {
+    margin: 0 5rem;
+    height: auto;
+    padding: 6rem 0;
+  }
+
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .section__pic-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.5rem;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+/* === Responsive @ 992px (Tablets) === */
+@media screen and (max-width: 992px) {
+  section {
+    margin: 0 3rem;
+    padding: 4rem 0;
+    height: auto;
+  }
+
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .project-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .about-containers {
+    gap: 1rem;
+  }
+
+  .article-container {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .text-container,
+  .details-container {
+    text-align: center;
+  }
+
+  #profile {
+    gap: 3rem;
+    height: auto;
+  }
+}
+
+/* === Responsive @ 768px (Phablets) === */
+@media screen and (max-width: 768px) {
+  section {
+    margin: 0 1.5rem;
+    padding: 3rem 0;
+    height: auto;
+  }
+
+  .section__pic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .about-containers,
+  .section-container,
+  .btn-container,
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .details-container,
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+/* === Responsive @ 576px (Phones) === */
+@media screen and (max-width: 576px) {
+  .section__pic-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .section__text__p2,
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  article {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .btn {
+    width: 90%;
+  }
+
+  footer nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .text-container {
+    padding: 0 1rem;
+  }
+}
+
+/* === Extra Small Devices @ 400px === */
+@media screen and (max-width: 400px) {
+  .section__pic-container {
+    width: 130px;
+    height: 130px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.1rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1rem;
+  }
+
+  #hamburger-nav {
+    padding: 1rem;
+  }
+}
+
+/* === Touch Device Hover Fallback === */
+@media (hover: none) {
+  a:hover,
+  .btn:hover {
+    color: inherit;
+    background: inherit;
+    text-decoration: none;
+    transform: none !important;
+  }
+}
