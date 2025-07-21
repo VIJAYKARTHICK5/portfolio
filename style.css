@@ -435,43 +435,50 @@ section {
   box-shadow: var(--box-shadow-hover);
 }
 
-/* EXPERIENCE SECTION */
-#experience {
-  position: relative;
-}
-
-.experience-sub-title {
-  color: var(--primary-color);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
+/* EXPERIENCE SECTION LAYOUT FIX */
 .experience-details-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.details-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--border-dark);
+  background: white;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+  height: 100%;
 }
 
+/* Skill Card */
 .article-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  justify-content: space-around;
-  text-align: initial;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
 article {
   display: flex;
-  justify-content: space-around;
-  gap: 0.5rem;
-  width: 10rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 1rem;
   background: white;
   border-radius: 1rem;
   box-shadow: var(--box-shadow);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 article:hover {
@@ -479,9 +486,6 @@ article:hover {
   box-shadow: var(--box-shadow-hover);
 }
 
-article .icon {
-  cursor: default;
-}
 
 /* PROJECTS SECTION */
 #projects {
