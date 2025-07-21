@@ -249,3 +249,75 @@
     transform: none !important;
   }
 }
+
+/* === Projects Grid Responsiveness === */
+
+/* 992px and below (Tablet and smaller) */
+@media screen and (max-width: 992px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .details-container.color-container {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.25rem;
+  }
+
+  .details-container p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 768px and below (Phablets) */
+@media screen and (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-img {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* 576px and below (Phones) */
+@media screen and (max-width: 576px) {
+  .details-container.color-container {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-btn {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .details-container p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 400px and below (Extra Small Devices) */
+@media screen and (max-width: 400px) {
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+}
